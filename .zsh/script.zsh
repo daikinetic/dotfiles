@@ -5,6 +5,10 @@ function xcode-select() {
   command xcode-select --help    # ③ 常にヘルプを表示
 }
 
+sedbat() {
+  sed -n "s/$1/$2/p" | bat
+}
+
 function brew() {
   command brew "$@" || return
 
