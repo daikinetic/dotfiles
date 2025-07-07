@@ -1,5 +1,4 @@
 
-eval "$(~/.local/bin/mise activate zsh)"
 burl() { curl -s "$@" | jq . | bat --language=json; }
 set -o ignoreeof
 
